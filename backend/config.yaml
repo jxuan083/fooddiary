@@ -1,0 +1,6 @@
+database:
+  user: root
+  password: leo19950830
+  host: localhost
+  port: 3306
+  name: food_app
