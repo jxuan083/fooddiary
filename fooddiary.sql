@@ -45,7 +45,7 @@ CREATE TABLE REVIEW (
  rating DECIMAL(2,1) NOT NULL CHECK (rating >= 1.0 AND rating <= 5.0),
  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
  status ENUM('public', 'private') NOT NULL DEFAULT 'public',
- FOREIGN KEY (user_id) REFERENCES USER(user_id),
+ FOREIGN KEY (user_id) REFERENCES USERS(user_id),
  FOREIGN KEY (restaurant_id) REFERENCES RESTAURANT(restaurant_id)
 );
 
